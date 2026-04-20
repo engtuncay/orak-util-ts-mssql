@@ -1,0 +1,58 @@
+{
+  "name": "orak-util-ts-mssql",
+  "version": "0.0.1",
+  "description": "OrakSoft - Mssql Typescript Utility Library",
+  "type": "module",
+  "main": "dist/orak-util-ts-mssql.cjs",
+  "module": "dist/orak-util-ts-mssql.js",
+  "types": "dist/orak-util-ts-mssql.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/orak-util-ts-mssql.d.ts",
+      "import": "./dist/orak-util-ts-mssql.js",
+      "require": "./dist/orak-util-ts-mssql.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "np-install": "pnpm install",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsup",
+    "np-publish": "pnpm publish --no-git-checks",
+    "np-build-publish": "tsup && pnpm publish --no-git-checks",
+    "np-link-global": "pnpm link --global",
+    "np-unlink": "pnpm unlink --global orak-util-ts",
+    "np-list-global": "pnpm list -g"
+  },
+  "scripts_comment": "Add new class to index.ts (Yeni eklenen sınıfları index.ts dosyasına ekleyin)",
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "author": "Tuncay Orak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engtuncay/orak-util-ts-mssql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/engtuncay/orak-util-ts-mssql.git/issues"
+  },
+  "homepage": "https://github.com/engtuncay/orak-util-ts-mssql#readme",
+  "devDependencies": {
+    "terser": "^5.39.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.2.2",
+    "vitest": "^2.1.2",
+    "@types/mssql": "^9.1.11"
+  },
+  "dependencies": {
+    "mssql": "^11.0.1",
+    "orak-util-ts": "file:../orak-util-ts"
+  },
+  "devDependenciesComment": {}
+}
