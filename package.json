@@ -1,6 +1,6 @@
 {
   "name": "orak-util-ts-mssql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "OrakSoft - Mssql Typescript Utility Library",
   "type": "module",
   "main": "dist/orak-util-ts-mssql.cjs",
