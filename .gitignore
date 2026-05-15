@@ -7,6 +7,8 @@ node_modules
 test
 src/**.js
 coverage
+*.log
+yarn.lock
 
 # Logs
 logs
@@ -16,6 +18,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+node_modules
 dist
 dist-ssr
 *.local
@@ -31,14 +35,13 @@ dist-ssr
 *.sln
 *.sw?
 
+# Webstorm specific
+
 # Node.js bağımlılıkları
 node_modules/
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
-
-# Npm Related
-.npmrc
 
 # WebStorm / JetBrains IDE'ye özel dosyalar
 .idea/
@@ -84,9 +87,9 @@ cypress/screenshots/
 # Yarn 4
 .yarn/*
 !.yarn/patches
-!.yarn/plugns
+!.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
 
-
+.npmrc
